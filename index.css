@@ -1,0 +1,255 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none !important;
+  color: #2a363b;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #7c7c7c;
+  transition: ease-in-out 0.3s;
+}
+
+nav {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-link {
+  color: #f5d061;
+  font-size: 100%;
+}
+
+.nav-link:hover {
+  color: #f4f4f4;
+  transition: ease-in-out 0.2s;
+}
+
+.dropdown-menu {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.navbar-toggler {
+  border: 0 !important;
+  color: #f5d061;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-item img {
+  width: 100vw;
+  height: 100vh;
+}
+
+.carousel-caption {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.carousel-item p {
+  max-width: 700px;
+  margin: 0 auto 35px auto;
+}
+
+.carousel-control-prev {
+  width: 90px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  background: #f5d061;
+  border-radius: 0 50px 50px 0;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover {
+  background: #2a363b;
+  transition: 0.5s;
+}
+
+.carousel-control-next {
+  width: 90px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background: #f5d061;
+  border-radius: 50px 0 0 50px;
+  opacity: 1;
+}
+
+.carousel-control-next:hover {
+  background: #2a363b;
+  transition: 0.5s;
+}
+
+.carousel-caption .carousel-content a button.carousel-content-btn1 {
+  background: #f5d061;
+  color: #2a363b;
+  opacity: 1;
+  border: 0;
+  border-radius: 20px;
+}
+
+.carousel-caption .carousel-content a button.carousel-content-btn1:hover {
+  background: #2a363b;
+  color: #ffffff;
+  border: 0;
+  opacity: 1;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+
+#carouselId .carousel-indicators li {
+  width: 30px;
+  height: 10px;
+  background: #f5d061;
+  margin: 10px;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+#carouselId .carousel-indicators li:hover {
+  background: #2a363b;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+
+  .carousel-item img {
+    min-height: 500px;
+    object-fit: cover;
+  }
+
+  .carousel-item h1 {
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-item {
+    min-height: 400px;
+  }
+
+  .carousel-item img {
+    min-height: 400px;
+    object-fit: cover;
+  }
+
+  .carousel-item h1 {
+    font-size: 28px !important;
+  }
+}
+@media (max-width: 300px) {
+  .carousel-control-prev {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: #f5d061;
+    border-radius: 0 50px 50px 0;
+    opacity: 1;
+  }
+
+  .carousel-control-prev:hover {
+    background: #2a363b;
+    transition: 0.5s;
+  }
+
+  .carousel-control-next {
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    background: #f5d061;
+    border-radius: 50px 0 0 50px;
+    opacity: 1;
+  }
+
+  .carousel-control-next:hover {
+    background: #2a363b;
+    transition: 0.5s;
+  }
+
+  .carousel-control-prev-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .carousel-control-next-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.btn-primary {
+  background: #f5d061;
+  color: #2a363b;
+  opacity: 1;
+  border: 0;
+}
+
+.btn-primary:hover {
+  background: #2a363b;
+  color: #ffffff;
+  border: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.jumbotron h1.display-4 {
+  color: #2a363b;
+}
+
+.jumbotron h1.display-4 span {
+  color: #f5d061;
+}
+
+.table tbody tr th {
+  background-color: #f4f4f4;
+}
+
+.table thead th {
+  background-color: #2a363b;
+  color: #f5d061;
+  text-align: center;
+}
